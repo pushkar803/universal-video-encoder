@@ -59,15 +59,6 @@ minVideoBitRateM=$(($minVideoBitRate))k
 maxVideoBitRateM=$(($maxVideoBitRate))k
 buffM=$(($buff))k
 
-echo $originalBitRate
-echo $reducingFactor
-echo $videoBitRateM
-echo $minVideoBitRateM
-echo $maxVideoBitRateM
-echo $buffM
-echo $inputVideoHeight
-echo $reqHeight
-
 #encoding ffmpeg command
 ffmpeg -i $1 \
 	-filter_complex \
